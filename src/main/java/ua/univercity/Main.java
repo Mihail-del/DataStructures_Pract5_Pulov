@@ -17,11 +17,17 @@ public class Main {
          */
 
         //! ===== TASK TWO =====
+        /*
         System.out.println("User requests Daily Report:");
         ReportGenerator myReport = new DailyReport();
         myReport.generate();
 
         System.out.println("User requests Financial Report:");
         new FinancialReport().generate();
+         */
+
+        //! ===== TASK THREE =====
+        MultiNotifier notifier = new MultiNotifier();
+        notifier.send("Важливе повідомлення!");
     }
 }
