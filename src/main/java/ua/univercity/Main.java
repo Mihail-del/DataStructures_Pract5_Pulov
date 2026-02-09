@@ -3,6 +3,8 @@ package ua.univercity;
 public class Main {
     public static void main(String[] args) {
         //! ===== TASK ONE =====
+        System.out.println("===== TASK ONE =====");
+
         PaymentProcessor processor = new PaymentProcessor();
 
         PaymentMethod card = new CardPayment();
@@ -15,6 +17,8 @@ public class Main {
         card.payWithFee(200, 25);
 
         //! ===== TASK TWO =====
+        System.out.println("===== TASK TWO =====");
+
         System.out.println("User requests Daily Report:");
         ReportGenerator myReport = new DailyReport();
         myReport.generate();
@@ -23,6 +27,8 @@ public class Main {
         new FinancialReport().generate();
 
         //! ===== TASK THREE =====
+        System.out.println("===== TASK THREE =====");
+
         MultiNotifier notifier = new MultiNotifier();
         notifier.send("Важливе повідомлення!");
     }
